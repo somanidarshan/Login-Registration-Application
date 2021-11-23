@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1010896958826",
+    "project_id": "loginregistration-f187d",
+    "storage_bucket": "loginregistration-f187d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010896958826:android:7e8bcebac6b37e0a7ce113",
+        "android_client_info": {
+          "package_name": "com.example.loginregistration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010896958826-gfr1vhhnoococof7aij0qtvnfei1ioml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGjMJ36pYDThedX-N_UUhjLHMERoOXfZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010896958826-gfr1vhhnoococof7aij0qtvnfei1ioml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
