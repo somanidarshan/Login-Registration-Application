@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/layout/activity_home2.xml" value="0.25" />
+        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/drawable-v24/buttons_background.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/drawable-v24/ic_lock.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/drawable/buttons_background.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/drawable/ic_lock.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/drawable/ic_mail.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/drawable/ic_number.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/drawable/ic_person.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/drawable/ic_phone.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/layout/activity_home2.xml" value="0.264" />
         <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/layout/activity_login2.xml" value="0.25" />
         <entry key="..\:/Users/irg/AndroidStudioProjects/LoginRegistration/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
