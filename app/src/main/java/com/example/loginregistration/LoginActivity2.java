@@ -57,7 +57,6 @@ public class LoginActivity2 extends AppCompatActivity {
                 if (upemail.isEmpty()) {
                     emailid.setError("Please Enter the Email id ");
                     emailid.requestFocus();
-
                 } else if (uppassword.isEmpty()) {
                     password.setError("Please Enter the password");
                 } else if (upemail.isEmpty() && uppassword.isEmpty()) {
