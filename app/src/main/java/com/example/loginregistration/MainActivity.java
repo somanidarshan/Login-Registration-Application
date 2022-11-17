@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(!task.isSuccessful()){
-                            Toast.makeText(MainActivity.this, "Sign up Successful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Something went wrong! try again", Toast.LENGTH_SHORT).show();
                         }
                         else{
                             startActivity(new Intent(MainActivity.this,HomeActivity2.class));
