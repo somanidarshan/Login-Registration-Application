@@ -10,7 +10,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-
     <androidx.cardview.widget.CardView
         android:background="#fff"
         android:layout_height="wrap_content"
@@ -26,7 +25,6 @@
             android:layout_width="match_parent"
             android:layout_margin="10dp">
 
-
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_height="150dp"
                 android:layout_width="150dp"
@@ -41,7 +39,7 @@
                 android:textStyle="bold"
                 android:textSize="25sp"
                 android:textColor="#000"
-                android:text="Driver Login"/>
+                android:text="Customer Login"/>
 
             <TextView android:layout_height="wrap_content"
                 android:layout_width="match_parent"

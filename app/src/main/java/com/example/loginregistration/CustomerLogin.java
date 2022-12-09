@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class LoginActivity2 extends AppCompatActivity {
+public class CustomerLogin extends AppCompatActivity {
     public EditText emailid,password;
     Button btnsignin;
     TextView tvsignup;
@@ -27,7 +27,7 @@ public class LoginActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login2);
+        setContentView(R.layout.activity_customer_login);
         mfirebaseauth = FirebaseAuth.getInstance();
         emailid = findViewById(R.id.email);
         password = findViewById(R.id.pass);
@@ -38,11 +38,11 @@ public class LoginActivity2 extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser mfirebaseUser = mfirebaseauth.getCurrentUser();
                 if (mfirebaseUser != null) {
-                    Toast.makeText(LoginActivity2.this, "You are Logged In", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(LoginActivity2.this, HomeActivity2.class);
+                    Toast.makeText(CustomerLogin.this, "You are Logged In", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(CustomerLogin.this, CustomerHomePage.class);
                     startActivity(i);
                 } else {
-                    Toast.makeText(LoginActivity2.this, "Please Login", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CustomerLogin.this, "Please Login", Toast.LENGTH_SHORT).show();
                 }
             }
         };
@@ -58,21 +58,21 @@ public class LoginActivity2 extends AppCompatActivity {
                 } else if (uppassword.isEmpty()) {
                     password.setError("Please Enter the password");
                 } else if (upemail.isEmpty() && uppassword.isEmpty()) {
-                    Toast.makeText(LoginActivity2.this, "Fields are Empty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CustomerLogin.this, "Fields are Empty", Toast.LENGTH_SHORT).show();
                 } else if (!(upemail.isEmpty() && uppassword.isEmpty())) {
-                    mfirebaseauth.signInWithEmailAndPassword(upemail, uppassword).addOnCompleteListener(LoginActivity2.this, new OnCompleteListener<AuthResult>() {
+                    mfirebaseauth.signInWithEmailAndPassword(upemail, uppassword).addOnCompleteListener(CustomerLogin.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (!task.isSuccessful()) {
-                                Toast.makeText(LoginActivity2.this, "Login Error, Please Login Again", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(CustomerLogin.this, "Login Error, Please Login Again", Toast.LENGTH_SHORT).show();
                             } else {
-                                Intent inthome = new Intent(LoginActivity2.this, HomeActivity2.class);
+                                Intent inthome = new Intent(CustomerLogin.this, CustomerHomePage.class);
                                 startActivity(inthome);
                             }
                         }
                     });
                 } else {
-                    Toast.makeText(LoginActivity2.this, "Error Occurred! During Sign UP", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CustomerLogin.this, "Error Occurred! During Sign UP", Toast.LENGTH_SHORT).show();
 
                 }
             }
@@ -82,7 +82,7 @@ public class LoginActivity2 extends AppCompatActivity {
         tvsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intsign = new Intent(LoginActivity2.this, MainActivity.class);
+                Intent intsign = new Intent(CustomerLogin.this, CustomerSignup.class);
                 startActivity(intsign);
             }
         });
@@ -90,9 +90,6 @@ public class LoginActivity2 extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        mfirebaseauth.addAuthStateListener(mAuthStateListener);
-    }
+
+
 }
