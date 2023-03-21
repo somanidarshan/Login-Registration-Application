@@ -14,8 +14,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class GSMModel extends AppCompatActivity {
-
-
     private Button gsm;
     private TextView text;
     @Override

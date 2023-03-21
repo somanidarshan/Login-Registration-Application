@@ -96,3 +96,7 @@ public class LoginActivity2 extends AppCompatActivity {
         mfirebaseauth.addAuthStateListener(mAuthStateListener);
     }
 }
+/*
+TO Do:
+1.Add code for taking image from gallery and saving it in realtime database using either firebase or room DB
+ */

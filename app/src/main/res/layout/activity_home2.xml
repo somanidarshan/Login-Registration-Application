@@ -36,26 +36,38 @@
         app:layout_constraintVertical_bias="0.74" />
 
     <Button
+        android:id="@+id/logout22"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:text="Proceed to Verification Step 1"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wlc"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
-        android:layout_marginBottom="300dp"
-        android:text="Proceed to Verification"
-         android:textAllCaps="false"
+        android:layout_marginBottom="208dp"
+        android:text="Proceed to Verification Step 2"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/logout1"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginBottom="120dp"
         android:text="Logout"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
